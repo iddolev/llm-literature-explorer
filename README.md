@@ -1,2 +1,2 @@
 # llm-literature-explorer
-A grounded conversational system for exploring LLM research literature
+A grounded conversational system for exploring LLM research literature.
