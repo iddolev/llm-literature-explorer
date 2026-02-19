@@ -1,0 +1,14 @@
+---
+description: Guidelines for the format of all markdown files
+globs: 
+alwaysApply: true
+author: iddolev
+source: iddolev
+license: Apache-2.0
+---
+
+# Markdown Guidelines
+
+1. Each heading line (at any heading level) should be followed by one empty line.
+2. Each list (numbered or bulleted) should be preceded by one empty line. 
+3. Each list (numbered or bulleted) should be followed by at least one empty line.

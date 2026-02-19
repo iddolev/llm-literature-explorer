@@ -1,0 +1,45 @@
+---
+description: Task list management guidelines for tracking PRD progress
+globs: 
+alwaysApply: false
+adapted from: author snarktank, at source: https://github.com/snarktank/ai-dev-tasks
+license: Apache-2.0
+---
+
+Rule: Processing a Task List
+
+# Purpose
+
+Guidelines for managing task lists in markdown files (in `/project/tasks/`) to track progress on completing a PRD.
+
+# Check status
+
+When the programmer starts a new conversation and asks that you follow this guildeline document, first check the status of the task list in /project/tasks/`, to bring yourself up to date, so you know where to continue.
+
+# Task Implementation
+
+- **One sub-task at a time:** Do **NOT** start the next sub‑task until you ask the user for permission and they say "yes" or "y"
+- **Completion protocol:**  
+  1. When you start a **sub‑task**, immediately mark it as "in progress" by changing `[ ]` to `[.]`.  
+  2. When you finish a **sub‑task**, immediately mark it as completed by changing `[ ]` or `[.]` to `[v]`.  
+  3. If **all** subtasks underneath a parent task are now `[v]`, also mark the **parent task** as completed.  
+- Stop after each sub‑task and wait for the user's go‑ahead.
+
+# Task List Maintenance
+
+Update the task list as you work:
+- Mark tasks and subtasks as completed (`[v]`) per the protocol above.
+- Add new tasks as they emerge.
+
+# AI Instructions
+
+When working with task lists, the AI must:
+
+1. Regularly update the task list file after finishing any significant work.
+2. Follow the completion protocol:
+   - Mark each finished **sub‑task** `[v]`.
+   - Mark the **parent task** `[v]` once **all** its subtasks are `[v]`.
+3. Add newly discovered tasks.
+4. Keep "Relevant Files" accurate and up to date.
+5. Before starting work, check which sub‑task is next.
+6. After implementing a sub‑task, update the file and then pause for user approval.
